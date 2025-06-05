@@ -1,10 +1,13 @@
 name: OpenWebUI Frontend
 version: "0.1.0"
-slug: openwebui_frontend
+slug: open_webui
 description: A Home Assistant addon for the OpenWebUI frontend.
 arch:
-  - amd64
   - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
 url: "https://github.com/Sangoku/home_asistant_open_webui"
 startup: application
 init: false
