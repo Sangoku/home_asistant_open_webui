@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Open WebUI Home Assistant add-on repository
+url: 'https://github.com/open-webui/open-webui-hass-addon'
+maintainer: Open WebUI Team <info@openwebui.com>

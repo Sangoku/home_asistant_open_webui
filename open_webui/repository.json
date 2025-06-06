@@ -1,8 +1,0 @@
-{
-  "name": "Open WebUI Add-ons",
-  "url": "https://github.com/Sangoku/home_asistant_open_webui",
-  "maintainer": "Sangoku sinisaculic@gmail.com",
-  "addons": [
-    "open_webui"
-  ]
-}

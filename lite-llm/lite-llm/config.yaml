@@ -1,0 +1,52 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: LiteLLM
+version: 1.0.0
+slug: lite-llm
+description: Lite LLm home asistant addon
+url: "https://github.com/open-webui/open-webui-hass-addon/tree/main/open-webui"
+
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+options:
+  master_key: "sk-1234"
+  salt_key: "sk-1234"
+schema:
+  master_key: str
+  salt_key: str
+
+ports:
+    4000/tcp: 4000
+ports_description:
+  8080/tcp: Web interface
+ingress: true
+ingress_stream: true,
+ingress_port: 4000
+panel_icon: mdi:robot
+
+
+
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Open WebUI
+version: "main"
+slug: open-webui
+description: Open WebUI Home Assistant add-on
+url: "https://github.com/open-webui/open-webui-hass-addon/tree/main/open-webui"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+options: {}
+schema: {}
+image: "ghcr.io/home-assistant/{arch}-addon-example"

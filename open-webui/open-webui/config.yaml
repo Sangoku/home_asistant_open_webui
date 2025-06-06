@@ -1,0 +1,26 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Open WebUI
+version: "main"
+slug: open-webui
+description: Open WebUI Home Assistant add-on
+url: "https://github.com/open-webui/open-webui-hass-addon/tree/main/open-webui"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+options: {}
+schema: {}
+image: "ghcr.io/home-assistant/{arch}-addon-example"
+
+ports:
+  8080/tcp: 3000 # Map the container's 8080 to host port 3000
+ports_description:
+  8080/tcp: Web interface
+ingress: true
+ingress_stream: true
+ingress_port: 3000
