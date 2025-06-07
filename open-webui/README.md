@@ -20,8 +20,6 @@ Examples of temporary access links (replace with your actual Home Assistant IP/h
 -   [or your local ip](http://192.168.0.26:3000)
 
 
-
-
 ### [Open WebUI](./open-webui)
 
 ![Supports aarch64 Architecture][aarch64-shield]
@@ -34,6 +32,6 @@ _Open WebUI Home Assistant add-on_
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
+[armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg 
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg

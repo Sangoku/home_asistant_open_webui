@@ -1,7 +1,6 @@
 # Home Assistant Add-on: LiteLLM
 
-![LiteLLM Logo](logo.png)
-
+![logo.png](/api/hassio/addons/local_lite-llm/logo) 
 ## What is LiteLLM?
 
 LiteLLM is a library that simplifies the process of interacting with various large language models (LLMs) by providing a consistent API. This Home Assistant add-on packages LiteLLM, allowing you to easily integrate different LLMs into your Home Assistant automations and applications. It acts as a proxy, enabling you to use a single interface to connect to models from providers like OpenAI, Anthropic, Cohere, and more.
