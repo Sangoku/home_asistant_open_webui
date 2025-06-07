@@ -8,9 +8,19 @@ Add-on documentation: <https://github.com/open-webui/open-webui-hass-addon/tree/
 
 [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fopen-webui%2Fopen-webui-hass-addon)
 
-## Add-ons
 
-This repository contains the following add-ons
+## Accessing the Web UI
+
+Currently, Home Assistant Ingress is not working for this add-on. You can access the web UI directly via the configured port (default is 4000).
+
+Examples of temporary access links (replace with your actual Home Assistant IP/hostname if necessary):
+
+-   [local host](http://localhost:3000)
+-   [local home assistant](http://localhost:3000)
+-   [or your local ip](http://192.168.0.26:3000)
+
+
+
 
 ### [Open WebUI](./open-webui)
 
