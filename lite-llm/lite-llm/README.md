@@ -42,3 +42,4 @@ Examples of temporary access links (replace with your actual Home Assistant IP/h
 
 -   **Main LiteLLM Project:** [https://github.com/BerriAI/litellm](https://github.com/BerriAI/litellm)
 -   **Add-on Source Repository:** [https://github.com/open-webui/open-webui-hass-addon/tree/main/lite-llm](https://github.com/open-webui/open-webui-hass-addon/tree/main/lite-llm)
+ 

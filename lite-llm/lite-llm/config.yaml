@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: LiteLLM
-version: 1.0.0
+version: 1.0.10
 slug: lite-llm
 description: Lite LLm home asistant addon
 url: "https://github.com/open-webui/open-webui-hass-addon/tree/main/open-webui"
@@ -17,9 +17,11 @@ map:
 options:
   master_key: "sk-eSqEw8vZvuSWDDrFwnF3h4uI30Z1zJiH"
   salt_key: "sk-MaPYI7wJCvek3sSCsBAbeZok7BY7ziY7"
+  database_url: "postgresql://litellm:password@77b2833f-timescaledb:5432/litellm"
 schema:
   master_key: str
   salt_key: str
+  database_url: str
 
 ports:
     4000/tcp: 4000
