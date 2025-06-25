@@ -4,6 +4,8 @@
 LITELLM_MASTER_KEY=$(jq -r '.master_key' /data/options.json)
 LITELLM_SALT_KEY=$(jq -r '.salt_key' /data/options.json)
 DATABASE_URL=$(jq -r '.database_url' /data/options.json)
+#temp workaround to make ingress work...
+#INGRESS_SLUG=$(jq -r '.ingress_slug' /data/options.json)
 
 # Check if required variables are set
 if [ -z "$LITELLM_MASTER_KEY" ]; then
@@ -24,14 +26,15 @@ fi
 # Export as environment variables
 export LITELLM_MASTER_KEY
 export LITELLM_SALT_KEY
-export SERVER_ROOT_PATH="/local_open-webui/ingress"
+#export SERVER_ROOT_PATH="/api/hassio_ingress/$INGRESS_SLUG"
+export STORE_MODEL_IN_DB=True
 export DATABASE_URL
 
 
-echo "LITELLM_MASTER_KEY: {$LITELLM_MASTER_KEY}\n" >&2
-echo "LITELLM_SALT_KEY: {$LITELLM_SALT_KEY}\n" >&2
-echo "SERVER_ROOT_PATH: {$SERVER_ROOT_PATH}\n" >&2
-echo "DATABASE_URL: {$DATABASE_URL}" >&2
+#echo "LITELLM_MASTER_KEY: {$LITELLM_MASTER_KEY}\n" >&2
+#echo "LITELLM_SALT_KEY: {$LITELLM_SALT_KEY}\n" >&2
+#echo "SERVER_ROOT_PATH: {$SERVER_ROOT_PATH}\n" >&2
+#echo "DATABASE_URL: {$DATABASE_URL}" >&2
 
 python3 litellm/proxy/prisma_migration.py
 
